@@ -1,0 +1,26 @@
+{
+  "name": "pokedextest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moi74/pokedexTest.git"
+  },
+  "author": "Moisés Sant'Anna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moi74/pokedexTest/issues"
+  },
+  "homepage": "https://github.com/moi74/pokedexTest#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "consign": "^0.1.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
