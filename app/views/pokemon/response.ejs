@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+        <link rel="shortcut icon" href="images/logo_pokebola.png">
+        <title>Pokédex</title>
+        <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+            <div class="header">
+                <a href="/">
+                    <img class="poke_ico" src="images/logo_pokemon.png">
+                </a>
+                <div class="divBusca">
+                    <form action="/buscar" method="post">
+                        <input type="text" class="search" name="search" placeholder="Pesquisar Pokemon">
+                        <button type="submit" class="search"><img class="search_icon" src="images/search.png"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Pesquisa de Pokémon</h1>
+
+                <p>Vocês pesquisou pelo pokémon: <%=teste%></p>
+            </div>
+    </body>
+</html>
