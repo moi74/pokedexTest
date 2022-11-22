@@ -1,7 +1,12 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-image: url('images/fundo.jpg');
   }
+
+h1, h2, p, table, ul, li {
+  margin-left: 1%;
+}
 
   .wrapper {
     min-height: 100%;
@@ -12,7 +17,6 @@ html, body {
     margin-left: 10%;
     margin-right: 10%;
     background: white;
-    border: solid 1px;
     flex-grow: 1;
     flex-basis: auto;
     height: 92.5%;
@@ -52,3 +56,7 @@ html, body {
     height: 15px;
 }
 
+.pokedex_image{
+  position: inherit;
+  margin-left: 10%;
+}

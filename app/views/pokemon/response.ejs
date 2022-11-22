@@ -18,9 +18,26 @@
                 </div>
             </div>
             <div class="content">
-                <h1>Pesquisa de Pokémon</h1>
+                <h1><%=pokemon%></h1></br>
+                <img class="pokedex_image" src="images/pokedex.png">
 
-                <p>Vocês pesquisou pelo pokémon: <%=teste%></p>
+                <h2>Tipo</h2>
+                    <ul class="listaTipo">
+                        <% for(let i=0; i < pokeDados.types.length; i++) {%>
+                            <li><%=pokeDados.types[i].type.name%></li>
+                        <% } %>
+                    </ul>
+                <h2>Movimentos aprendidos</h2> 
+                    <table>
+                        <% for(let i=0; i < pokeDados.moves.length; i+=2) { %>
+                            <tr>
+                                <td><%=pokeDados.moves[i].move.name%></td>
+                                <% if((i+1) < pokeDados.moves.length) { %>
+                                <td><%=pokeDados.moves[i+=1].move.name%></td>
+                                <% } %>
+                            </tr>
+                        <% } %>
+                    </table>
             </div>
     </body>
 </html>
